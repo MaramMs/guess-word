@@ -48,13 +48,26 @@
     gap: 1rem;
    
 }
-
+.typing{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.winner{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.winner.hidden{
+    display: none;
+}
 .card .inputs input{
     background-color: var(--mainBgColor);
     width: 50px;
     height: 50px;
     border-radius: 6px;
-    color: var(--secondColor);
+    color: aqua;
     text-align: center;
     text-transform: uppercase;
     
@@ -82,4 +95,7 @@
     color: var(--mainColor);
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
 }
