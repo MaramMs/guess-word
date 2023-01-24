@@ -6,28 +6,43 @@ const inputContainer = document.querySelector(".inputs"),
 btn = document.querySelector(".btn");
 
 const game = [
-  {
-    word: "css",
-    desc: " style",
-  },
-  {
-    word: "bootstrap",
-    desc: "framework style",
-  },
-  {
-    word: "react",
-    desc: "framework style2",
-  },
-  {
-    word: "js",
-    desc: "framework style3",
-  },
-  {
-    word: "css",
-    desc: "framework style4",
-  },
-];
-
+    {
+      word: "react",
+      desc: "JavaScript library",
+    },
+    {
+      word: "vue",
+      desc: "JavaScript Framework",
+    },
+    {
+      word: "angular",
+      desc: "JavaScript MVW Framework",
+    },
+    {
+      word: "nodejs",
+      desc: "JavaScript runtime environment",
+    },
+    {
+      word: "php",
+      desc: "general-purpose scripting language",
+    },
+    {
+      word: "ruby",
+      desc: "open source programming language",
+    },
+    {
+      word: "python",
+      desc: "Programming Language",
+    },
+    {
+      word: "tailwind",
+      desc: "A utility-first CSS framework",
+    },
+    {
+      word: "bootstrap",
+      desc: "world's most famous free CSS framework",
+    },
+  ];
 document.addEventListener("keydown", () => typingInput.focus());
 typingInput.addEventListener("input", startGame);
 let countGuess = 12,
