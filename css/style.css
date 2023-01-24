@@ -1,0 +1,85 @@
+:root{
+    --mainBgColor: #0d1117;
+    --secondBgColor:#222121c2;
+    --mainColor:#fff;
+    --descColor:#ddd;
+    --secondColor:linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
+    --btnBgColor:#2190ff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.app{
+    display: grid;
+    place-items:center ;
+    height: 100vh;
+    background-color: var(--mainBgColor);
+    color: var(--mainColor);
+}
+
+.header{
+ margin: 15px 0px;
+}
+.header .title{
+    background: var(--secondColor);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+.card{
+    background-color: var(--secondBgColor);
+    width: 500px;
+    height: 250px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.card .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+   
+}
+
+.card .inputs input{
+    background-color: var(--mainBgColor);
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    color: var(--secondColor);
+    text-align: center;
+    text-transform: uppercase;
+    
+    
+}
+
+:where(input , button){
+    border: none;
+    outline: none;
+}
+
+.info{
+    text-align: center;
+    margin: 1rem 0px;
+    color: var(--descColor);
+}
+.info p>span{
+    color: var(--btnBgColor);
+}
+.btn{
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: var(--btnBgColor);
+    border-radius: 6px;
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: bold;
+}
